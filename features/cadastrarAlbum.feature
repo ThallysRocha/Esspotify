@@ -58,3 +58,4 @@ Scenario: Falha na inserção de música
   And: Eu preencho o campo de artistas participantes com "Aduleibe"
   Then: Eu continuo na página de "inserir músicas"
   And: Eu vejo uma mensagem de erro contendo "Artista participante não está cadastrado"
+  And: Eu vejo uma mensagem "Correção adicionada como o stakeholder pediu" 

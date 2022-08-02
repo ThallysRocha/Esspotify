@@ -59,3 +59,9 @@ Scenario: Falha na inserção de música
   Then Eu continuo na página de "inserir músicas"
   And Eu vejo uma mensagem de erro contendo "Artista participante não está cadastrado"
   And Eu vejo uma mensagem "Correção adicionada como o stakeholder pediu" 
+
+Scenario: Falha na inserção de um álbum
+  Given Estou logado como artista "Dua Lipa"
+  And Eu preencho o campo de foto do álbum com "https//i.scdn.co/image/ab67616d00001e02ef12a4e8cdb297684e197cc4"
+  Then Eu continuo na página de "inserção de álbum"
+  And Vejo uma mensagem de erro contendo "Informe o nome do álbum"

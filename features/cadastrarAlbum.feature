@@ -74,3 +74,8 @@ Scenario: Inserção bem sucedida de uma música
   And Eu preencho o campo de artistas participantes com "Evanescence"
   Then Eu vejo uma mensagem de sucesso
   And Eu sou redirecionado para a página de "álbuns do artista"
+
+Scenario: Falha na inserção de um álbum:
+  Given Estou logado como artista "Luigi"
+  When Eu preencho o campo de nome do álbum com "MarioKart8"
+  Then Eu sou redirecionado para a página de "inserir de musicas" com sucesso

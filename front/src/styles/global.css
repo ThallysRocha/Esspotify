@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Black: #000000;
+  --Gray_Dark: #121212;
+  --Gray: #333333;
+  --Primary_Light: #0d99ff;
+  --Primary: #1e60d7;
+  --White: #ffffff;
+  --Gray_Light: #757575;
+  --Red: #e74c3c;
+}
+
+body {
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+html,
+#root {
+  background-color: var(--Gray_Dark);
+  height: 100vh;
+}
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  color: var(--White);
+}
+
+button {
+  cursor: pointer;
+}

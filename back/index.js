@@ -5,8 +5,9 @@ import app from "./src/server.js";
 (async function () {
   try {
     await connectDB(process.env.DB_URL);
-    app.listen(3333, (_) => {
-      console.log("Server running on port 3333");
+    const PORT = process.env.PORT
+    app.listen(PORT, (_) => {
+      console.log("Server running on port " + PORT + "...");
     });
   } catch (error) {
     console.log("Database connection not established, server will not run");
